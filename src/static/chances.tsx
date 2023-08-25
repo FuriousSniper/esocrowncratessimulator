@@ -1,5 +1,6 @@
-//bonus
+import { ITEMQUALITY } from "./enums"
 
+//bonus
 export const bonusChances = {
     radiant: {
         normal: 0.33
@@ -83,3 +84,88 @@ export const reward1Chances = {
         poison: 0.5775
     }
 }
+
+export const reward1 = [
+    {
+        name: ITEMQUALITY.common,
+        chance: 70.38, //85%
+    },
+    {
+        name: ITEMQUALITY.fine,
+        chance: 15.29, //
+    },
+    {
+        name: ITEMQUALITY.superior,
+        chance: 8.03,
+    },
+    {
+        name: ITEMQUALITY.epic,
+        chance: 3.42,
+    },
+    {
+        name: ITEMQUALITY.legendary,
+        chance: 0,
+    },
+];
+
+export const reward2 = [
+    {
+        name: ITEMQUALITY.superior,
+        chance: 15, //85%
+    },
+    {
+        name: ITEMQUALITY.epic,
+        chance: 6.71, //
+    },
+    {
+        name: ITEMQUALITY.legendary,
+        chance: 0.11,
+    },
+    {
+        name: ITEMQUALITY.apex,
+        chance: 0,
+    },
+];
+
+export const reward3 = [
+    {
+        name: ITEMQUALITY.common,
+        chance: 30.19, //
+    },
+    {
+        name: ITEMQUALITY.fine,
+        chance: 0, //
+    },
+];
+
+export const reward4 = [
+    {
+        name: ITEMQUALITY.common,
+        chance: 10.07, //
+    },
+    {
+        name: ITEMQUALITY.fine,
+        chance: 0, //
+    },
+];
+
+export const rewardBonus = [
+    {
+        name: ITEMQUALITY.epic,
+        chance: 42.98, //
+    },
+    {
+        name: ITEMQUALITY.legendary,
+        chance: 11.97,
+    },
+    {
+        name: ITEMQUALITY.apex,
+        chance: 1.43,
+    },
+    {
+        name: ITEMQUALITY.radiant,
+        chance: 0,
+    },
+];
+
+export const bonusChance = 17.14;

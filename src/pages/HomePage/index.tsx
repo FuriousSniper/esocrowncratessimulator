@@ -2,7 +2,6 @@ import cratesArray from "../../static/crates"
 import { CrateType } from "../../../types/common/main"
 import "./style.css"
 import CrateLink from "../../components/CrateLink"
-import { useEffect } from "react"
 
 const HomePage = () => {
     return (
