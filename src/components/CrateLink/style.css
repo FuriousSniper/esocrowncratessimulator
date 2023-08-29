@@ -1,0 +1,27 @@
+.crateLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 150px;
+    padding: 10px;
+    text-decoration: none;
+    transition: color .3s ease, border .3s ease, filter .3s ease;
+    border-radius: 5px;
+    color: #b1a564;
+    border: 2px solid rgba(177, 165, 100, 0.5);
+    box-sizing: border-box;
+    margin: 15px;
+}
+.crateLink:hover{
+    color: #b5d6f5;
+    border: 2px solid rgba(181, 214, 245, 0.5);
+}
+.crateLink:hover .crateIcon{
+    filter: saturate(150%);
+}
+
+
+.crateName{
+    width: 100%;
+    margin: 10px 0;
+}

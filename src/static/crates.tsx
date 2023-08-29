@@ -3,8 +3,8 @@ import IronAtroDropMap from './rewards/ironAtro'
 const cratesArray: CrateType[] = [
     {
         name:"Iron Atronach",
-        miniatureLink: "images/crates/ironAtro/crate.png",
-        rewersLink: "images/crates/ironAtro/rew.png",
+        miniatureLink: "/images/crates/ironAtro/crate.png",
+        rewersLink: "/images/crates/ironAtro/rew.png",
         link: "ironatronach",
         dropMap: IronAtroDropMap
     }
