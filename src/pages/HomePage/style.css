@@ -1,0 +1,44 @@
+.centered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linksSection{
+    width: 60%;
+    border: 2px solid rgba(177, 165, 100, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.sectionTitle{
+    text-align: left;
+    padding: 15px 0 0 15px;
+}
+@media (max-width: 992px) {
+    .linksSection{
+        width: 100%;
+    }
+}
+
+.crateLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.description{
+    padding: 15px;
+    text-align: left;
+}
+
+.textLink{
+    color: rgb(212, 215, 153, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.textLink:hover{
+    color: rgba(181, 214, 245);
+}

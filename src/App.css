@@ -1,38 +1,74 @@
+html,
+body, #root {
+  height: 100%;
+  margin: 0;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: black;
   color: white;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  overflow-y: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.content{
+  flex: 1 1 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.highlightedElement{
+  border: 2px solid rgb(212, 215, 153, 0.7);
+  border-radius: 5px;
+}
+
+.common{
+  color: #888888;
+}
+
+.fine {
+  color: #2DC50E;
+}
+
+.superior{
+  color: #3A92FF;
+}
+
+.epic {
+  color: #A02EF7;
+}
+
+.legendary {
+  color: #CCAA1A;
+}
+
+.apex{
+  color: #E58B27;
+}
+
+.radiant{
+  color: #FF6F50;
+}
+
+button{
+  background-color: black;
+  color: rgb(212, 215, 153, 0.8);
+  border: 2px solid rgb(212, 215, 153, 0.8);
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease, border 0.3s ease;
+}
+
+button:hover{
+  color: rgba(181, 214, 245);
+  border: 2px solid rgba(181, 214, 245);
+}
+
+button:disabled{
+  color: #888888;
+  border: 2px solid #888888;
+  cursor:not-allowed;
 }

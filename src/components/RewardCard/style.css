@@ -1,0 +1,188 @@
+.rewardCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 242px;
+    flex: 1 1 0px;
+    padding-bottom: 5px;
+}
+
+.imageSection{
+    position: relative;
+    max-height: 350px;
+    width: auto;
+    transition: filter 0.3 ease-in-out;
+}
+
+.imageSection:hover{
+    filter: saturate(135%);
+}
+
+.nameInvisible{
+    opacity: 0;
+}
+
+.nameVisible{
+    opacity: 1;
+}
+
+.rewardImage{
+    position: relative;
+    display: block;
+    max-height: 350px;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.rewardOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 350px;
+    width: 100%;
+    height: 100%;
+}
+
+.rewers{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 350px;
+    width: 100%;
+    height: 100%;
+}
+
+.visibleRewers{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.invisibleRewers{
+    opacity: 1;
+    animation-name: removeRewers;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.rewardName{
+    margin: 10px 0 0 0;
+    padding: 0 25px;
+    font-size: 17px;
+}
+
+
+.superiorShadow{
+    filter: drop-shadow(8px 5px 41px rgba(58, 146, 255, 0.7))
+}
+
+.superiorShadow:hover{
+    filter: drop-shadow(8px 5px 41px rgba(58, 146, 255, 0.7));
+    animation-name: hoverSuperior;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.epicShadow{
+    filter: drop-shadow(8px 5px 41px rgba(160, 46, 247, 0.7))
+}
+
+.epicShadow:hover{
+    filter: drop-shadow(8px 5px 41px rgba(160, 46, 247, 0.7));
+    animation-name: hoverEpic;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.legendaryShadow{
+    filter: drop-shadow(8px 5px 41px rgba(204, 170, 26, 0.7))
+}
+
+.legendaryShadow:hover{
+    filter: drop-shadow(8px 5px 41px rgba(204, 170, 26, 0.7));
+    animation-name: hoverLegendary;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.apexShadow{
+    filter: drop-shadow(8px 5px 41px rgba(229, 139, 39, 0.7))
+}
+
+.apexShadow:hover{
+    filter: drop-shadow(8px 5px 43px rgba(229, 139, 39, 0.7));
+    animation-name: hoverApex;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.radiantShadow{
+    filter: drop-shadow(8px 5px 41px rgba(255, 111, 80, 0.7))
+}
+
+.radiantShadow:hover{
+    filter: drop-shadow(8px 5px 43px rgba(255, 111, 80, 0.7));
+    animation-name: hoverRadiant;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes removeRewers{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes hoverSuperior{
+    0%{
+        filter: drop-shadow(8px 5px 43px rgba(58, 146, 255, 0.7)) saturate(100%);
+    }
+    100%{
+        filter: drop-shadow(8px 5px 43px rgba(58, 146, 255, 0.9)) saturate(135%);
+    }
+}
+
+@keyframes hoverEpic{
+    0%{
+        filter: drop-shadow(8px 5px 43px rgba(160, 46, 247, 0.7)) saturate(100%);
+    }
+    100%{
+        filter: drop-shadow(8px 5px 43px rgba(160, 46, 247, 0.9)) saturate(135%);
+    }
+}
+
+@keyframes hoverLegendary{
+    0%{
+        filter: drop-shadow(8px 5px 43px rgba(204, 170, 26, 0.7)) saturate(100%);
+    }
+    100%{
+        filter: drop-shadow(8px 5px 43px rgba(204, 170, 26, 0.9)) saturate(135%);
+    }
+}
+
+@keyframes hoverApex{
+    0%{
+        filter: drop-shadow(8px 5px 43px rgba(229, 139, 39, 0.7)) saturate(100%);
+    }
+    100%{
+        filter: drop-shadow(8px 5px 43px rgba(229, 139, 39, 0.9)) saturate(135%);
+    }
+}
+
+@keyframes hoverRadiant{
+    0%{
+        filter: drop-shadow(8px 5px 43px rgba(255, 111, 80, 0.7)) saturate(100%);
+    }
+    100%{
+        filter: drop-shadow(8px 5px 43px rgba(255, 111, 80, 0.9)) saturate(135%);
+    }
+}
