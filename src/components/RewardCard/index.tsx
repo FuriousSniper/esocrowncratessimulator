@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import { RewardType } from "../../../types/common/main"
 import { ITEMQUALITY } from "../../static/enums"
 import "./style.css"

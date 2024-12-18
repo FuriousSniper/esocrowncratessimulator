@@ -1,10 +1,10 @@
 import cratesArray from "../../static/crates"
 import { CrateType } from "../../../types/common/main"
-import "./style.css"
 import CrateLink from "../../components/CrateLink"
 import FooterComponent from "../../components/FooterComponent"
 import HeaderComponent from "../../components/HeaderComponent"
 import { Link } from "react-router-dom"
+import "./style.css"
 
 const HomePage = () => {
     return (
